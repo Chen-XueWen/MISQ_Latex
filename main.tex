@@ -1,0 +1,87 @@
+\documentclass[12pt, letterpaper]{article}
+
+% Page Size and Margins
+\setlength{\topmargin}{-0.5in}
+\setlength{\oddsidemargin}{0in}
+\setlength{\evensidemargin}{0in}
+\setlength{\textwidth}{6.5in}
+\setlength{\textheight}{9in}
+\setlength{\headheight}{15pt}
+
+% Font
+\usepackage{times} 
+\usepackage[style=apa,backend=biber]{biblatex}
+\DeclareLanguageMapping{english}{english-apa}
+\addbibresource{references.bib} % your .bib file name
+
+% Footer
+\pagestyle{plain}
+
+% Line Spacing
+\renewcommand{\baselinestretch}{2.0}\normalsize
+
+% Redefine Heading Sizes to Match Regular Text
+\makeatletter
+\renewcommand\section{\@startsection {section}{1}{\z@}%
+                                   {-3.5ex \@plus -1ex \@minus -.2ex}%
+                                   {2.3ex \@plus.2ex}%
+                                   {\normalfont\normalsize\bfseries}}
+\renewcommand\subsection{\@startsection {subsection}{2}{\z@}%
+                                      {-3.25ex \@plus -1ex \@minus -.2ex}%
+                                      {1.5ex \@plus .2ex}%
+                                      {\normalfont\normalsize\bfseries}}
+\makeatother
+
+% Title
+\title{\textbf{MISQ LaTeX Template [Your Article Title]}}
+\date{} % No date
+\begin{document}
+
+\maketitle
+
+% Abstract
+\begin{abstract}
+\renewcommand{\baselinestretch}{1.5}\normalsize
+Your abstract goes here.
+The first page of your manuscript should include the following: (1) title, (2) abstract, and (3) 5-10 keywords related to the paper’s topic. Your introduction should begin on page 2 of the manuscript. 
+\end{abstract}
+
+% Keywords
+\renewcommand{\baselinestretch}{1.0}\normalsize
+\textbf{Keywords:} Your keywords go here.
+
+% Introduction
+\newpage
+\section{\centering{INTRODUCTION}}
+\renewcommand{\baselinestretch}{2.0}\normalsize
+Your introduction goes here.
+This document is meant to serve as a visualization of MIS Quarterly’s formatting guidelines. The layout, text, and headings are formatted in accordance with the guidelines detailed on our website. 
+Use this document as a template to copy and paste your manuscript before submitting it to MISQ.
+
+Test References: For example, we construct a large relational database \parencite{codd1970relational} to collect a large
+amount of data. In order to communicate the structure of this database, we
+use an Entity-Relationship diagram \parencite{chen1976entity}. We then analyze
+this data and learn great things about how to improve the world using information systems. This is for \parencite{author1year}, And this is \parencite{author2year}, this is for \parencite{brown2023fault}, \parencite{gupta2018economic}
+
+\section{\centering \MakeUppercase {Major Header}}
+Your content for major header 2 goes here.
+
+\subsection{\centering {First Subhead}}
+Your content for subheading 1 goes here.
+
+\subsubsection{Second Subhead}
+Your content for subheading 2 goes here.
+
+% Methodology, Results, Discussion, and Conclusion sections can be added here
+
+% References
+\newpage
+\section*{\centering{REFERENCES}}
+\printbibliography[heading=none]
+
+% Appendix
+\newpage
+\section*{\centering{APPENDIX}}
+Your appendices go here.
+
+\end{document}
