@@ -3,6 +3,8 @@ Based on the official LaTeX format, this version includes a corrected bibliograp
 
 Please compile using pdfLaTeX
 
+Last Updated: 20th June 2025
+
 ## Instructions to use the Latex Format
 Upload tex and bib files on your brand new overleaf project 
 <img width="828" alt="Architecture" src="./images/Setup2.png" />
